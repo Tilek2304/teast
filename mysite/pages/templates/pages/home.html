@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'pages/styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Добро пожаловать в наш образовательный портал!</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Главное</a></li>
+                <li><a href="{% url 'physics' %}">Физика</a></li>
+                <li><a href="{% url 'chemistry' %}">Химия</a></li>
+                <li><a href="{% url 'biology' %}">Биология</a></li>
+                <li><a href="{% url 'about' %}">О нас</a></li>
+            </ul>
+        </nav>
+    </header>
+    <footer>
+        <p>&copy; 2024 Мой сайт. Все права защищены.</p>
+    </footer>
+</body>
+</html>
