@@ -1,0 +1,4 @@
+--2025-01-21 08:16:53--  https://update.code.visualstudio.com/commit:cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/server-linux-x64/stable
+Resolving update.code.visualstudio.com (update.code.visualstudio.com)... 13.107.246.68, 2620:1ec:bdf::68
+Connecting to update.code.visualstudio.com (update.code.visualstudio.com)|13.107.246.68|:443... connected.
+Unable to establish SSL connection.
