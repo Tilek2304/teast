@@ -807,3 +807,207 @@ p {
 #w-node-_05ad29b5-6de9-5b63-40ea-674397bc151d-890116bb {
   grid-area: span 1 / span 1 / span 1 / span 1;
 }
+.udesly-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Расстояние между карточками */
+    padding: 20px;
+}
+
+.udesly-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 40px); /* 3 колонки с отступами */
+    max-width: calc(33.333% - 40px);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.udesly-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.udesly-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 20px;
+}
+
+.udesly-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.udesly-card-title {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #333333;
+}
+
+.udesly-card-download {
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.udesly-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Расстояние между карточками */
+  padding: 20px;
+}
+
+.udesly-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(33.333% - 40px); /* 3 колонки с отступами */
+  max-width: calc(33.333% - 40px);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.udesly-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.udesly-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  padding: 20px;
+}
+
+.udesly-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.udesly-card-title {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #333333;
+}
+
+.udesly-card-download {
+  font-size: 14px;
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.udesly-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+.udesly-card {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(33.333% - 40px);
+  max-width: calc(33.333% - 40px);
+  transition: transform 0.2s, box-shadow 0.2s;
+  overflow: hidden;
+}
+.udesly-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.udesly-card-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+.udesly-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.udesly-card-content {
+  padding: 20px;
+  text-align: center;
+}
+.udesly-card-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+.udesly-card-download {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+.udesly-card-download:hover {
+  background-color: #0056b3;
+}
+
+.udesly-card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Фиксированная ширина карточек */
+  gap: 20px;
+  padding: 20px;
+}
+
+.udesly-card {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px; /* Фиксированная ширина */
+  height: 400px; /* Фиксированная высота */
+  transition: transform 0.2s, box-shadow 0.2s;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column; /* Чтобы контент внутри карточки выстраивался вертикально */
+}
+
+.udesly-card-image {
+  width: 100%;
+  height: 100px; /* Фиксированная высота изображения */
+  overflow: hidden;
+  flex-shrink: 0; /* Запрещаем сжатие изображения */
+}
+
+.udesly-card-content {
+  padding: 20px;
+  text-align: center;
+  flex-grow: 1; /* Контент занимает оставшееся пространство */
+  overflow: hidden; /* Скрываем избыточный текст */
+}
+
+.udesly-card-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+  white-space: nowrap; /* Текст в одну строку */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Многоточие, если текст длинный */
+}
+
+.udesly-card-text {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Ограничиваем текст 3 строками */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
