@@ -538,7 +538,7 @@ p {
 .udesly-card-v1-wrapper {
   flex-direction: column;
   width: 100%;
-  max-width: 386px;
+  max-width: 1000px;
   height: 100%;
   padding-top: 40%;
   text-decoration: none;
@@ -917,7 +917,7 @@ p {
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   flex: 1 1 calc(33.333% - 40px);
-  max-width: calc(33.333% - 40px);
+  max-width: 100%;
   transition: transform 0.2s, box-shadow 0.2s;
   overflow: hidden;
 }
@@ -970,8 +970,6 @@ p {
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 300px; /* Фиксированная ширина */
-  height: 400px; /* Фиксированная высота */
   transition: transform 0.2s, box-shadow 0.2s;
   overflow: hidden;
   display: flex;
@@ -980,7 +978,7 @@ p {
 
 .udesly-card-image {
   width: 100%;
-  height: 100px; /* Фиксированная высота изображения */
+  height: 300; /* Фиксированная высота изображения */
   overflow: hidden;
   flex-shrink: 0; /* Запрещаем сжатие изображения */
 }
@@ -1006,6 +1004,7 @@ p {
   font-size: 14px;
   color: #666;
   margin-bottom: 15px;
+  width: 85%;
   display: -webkit-box;
   -webkit-line-clamp: 3; /* Ограничиваем текст 3 строками */
   -webkit-box-orient: vertical;

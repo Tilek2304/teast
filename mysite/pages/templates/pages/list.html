@@ -30,7 +30,7 @@
           <nav role="navigation" class="nav-menu-wrapper w-nav-menu">
             <ul role="list" class="nav-menu w-list-unstyled">
               <li>
-                <a href="#" class="nav-link">Главная</a>
+                <a href="{% url 'home' %}" class="nav-link">Главная</a>
               </li>
               <li>
                 <div data-hover="false" data-delay="0" class="nav-dropdown w-dropdown">
@@ -41,7 +41,9 @@
                   <nav class="nav-dropdown-list shadow-three mobile-shadow-hide w-dropdown-list">
                     <!-- <a href="" class="nav-dropdown-link w-dropdown-link">Resource Link 1</a> -->
                      
-                    <a href="" class="nav-dropdown-link w-dropdown-link">Физика</a>
+                    <a href="/physics/" class="nav-dropdown-link w-dropdown-link">Физика</a>
+                    <a href="/chemistry" class="nav-dropdown-link w-dropdown-link">Химия</a>
+                    <a href="/biology" class="nav-dropdown-link w-dropdown-link">Биология</a>
                   </nav>
                 </div>
               </li>
@@ -54,7 +56,7 @@
       </div>
     </div>
   </div>
-  <h1 class="heading">Лабораторные работы</h1>
+  <h1 class="heading">Лабораторные работы: {{subject_name}}</h1>
   <div class="udesly-section-2">
     <div class="udesly-container-2">
         <!-- <h3>{{ subject_name }}</h3> -->
@@ -63,12 +65,12 @@
                 <div class="udesly-card">
                     <div class="udesly-card-image">
                         <!-- Статическое изображение для предмета -->
-                        <img src="{% static 'images/'|add:subject|add:'.png' %}" alt="{{ subject_name }}">
+                        <img src="{{file.photo.url}}" alt="{{ subject_name }}">
                     </div>
                     <div class="udesly-card-content">
-                        <h3 class="udesly-card-title">{{ file.get_subject_display }}</h3>
+                        <h3 class="udesly-card-title">{{ file.name }}</h3>
                         <p class="udesly-card-text">
-                            Файл: {{ file.file.name|cut:"uploads/" }}<br>
+                            Описание: {{ file.description }}<br>
                             Загружен: {{ file.uploaded_at|date:"d.m.Y" }}
                         </p>
                         <a href="{{ file.file.url }}" download class="udesly-card-download">Скачать ZIP</a>
